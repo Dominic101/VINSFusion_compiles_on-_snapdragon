@@ -24,7 +24,8 @@ using namespace std;
 class ImageFrame
 {
     public:
-        ImageFrame(){};
+EIGEN_MAKE_ALIGNED_OPERATOR_NEW        
+ImageFrame(){};
         ImageFrame(const map<int, vector<pair<int, Eigen::Matrix<double, 7, 1>>>>& _points, double _t):t{_t},is_key_frame{false}
         {
             points = _points;

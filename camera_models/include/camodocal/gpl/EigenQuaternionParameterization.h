@@ -9,6 +9,7 @@ namespace camodocal
 class EigenQuaternionParameterization : public ceres::LocalParameterization
 {
 public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     virtual ~EigenQuaternionParameterization() {}
     virtual bool Plus(const double* x,
                       const double* delta,

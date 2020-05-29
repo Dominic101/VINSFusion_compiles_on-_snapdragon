@@ -17,10 +17,12 @@ namespace camodocal
 
 class EquidistantCamera: public Camera
 {
+ //EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 public:
     class Parameters: public Camera::Parameters
     {
     public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
         Parameters();
         Parameters(const std::string& cameraName,
                    int w, int h,

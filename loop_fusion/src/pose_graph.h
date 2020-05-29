@@ -46,6 +46,7 @@ using namespace DBoW2;
 class PoseGraph
 {
 public:
+	EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 	PoseGraph();
 	~PoseGraph();
 	void registerPub(ros::NodeHandle &n);
@@ -120,7 +121,7 @@ T NormalizeAngle(const T& angle_degrees) {
 
 class AngleLocalParameterization {
  public:
-
+ EIGEN_MAKE_ALIGNED_OPERATOR_NEW
   template <typename T>
   bool operator()(const T* theta_radians, const T* delta_theta_radians,
                   T* theta_radians_plus_delta) const {

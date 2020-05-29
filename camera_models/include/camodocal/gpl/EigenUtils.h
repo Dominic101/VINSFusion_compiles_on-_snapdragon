@@ -8,6 +8,7 @@
 
 namespace camodocal
 {
+//EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
 // Returns the 3D cross product skew symmetric matrix of a given 3D vector
 template<typename T>

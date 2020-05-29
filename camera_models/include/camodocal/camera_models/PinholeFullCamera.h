@@ -13,6 +13,7 @@ namespace camodocal
 class PinholeFullCamera : public Camera
 {
     public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     class Parameters : public Camera::Parameters
     {
         public:

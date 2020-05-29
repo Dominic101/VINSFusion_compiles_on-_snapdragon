@@ -23,8 +23,8 @@ using namespace Eigen;
 
 class MotionEstimator
 {
-  public:
-
+   public:
+   EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     bool solveRelativeRT(const vector<pair<Vector3d, Vector3d>> &corres, Matrix3d &R, Vector3d &T);
 
   private:

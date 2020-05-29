@@ -28,6 +28,7 @@ using namespace std;
 class GlobalOptimization
 {
 public:
+        EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 	GlobalOptimization();
 	~GlobalOptimization();
 	void inputGPS(double t, double latitude, double longitude, double altitude, double posAccuracy);

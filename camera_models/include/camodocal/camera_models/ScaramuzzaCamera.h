@@ -26,6 +26,7 @@ public:
     class Parameters: public Camera::Parameters
     {
     public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
         Parameters();
 
         double& C(void) { return m_C; }

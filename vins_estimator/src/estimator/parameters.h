@@ -19,7 +19,7 @@
 #include <map>
 
 using namespace std;
-
+//EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 const double FOCAL_LENGTH = 460.0;
 const int WINDOW_SIZE = 10;
 const int NUM_OF_F = 1000;

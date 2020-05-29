@@ -16,7 +16,8 @@ find_package(catkin REQUIRED COMPONENTS
     camera_models
     image_transport)
 
-find_package(OpenCV REQUIRED)
+include(/home/linaro/aut_ws/src/opencv/build/OpenCVConfig.cmake)
+#find_package(OpenCV REQUIRED)
 
 # message(WARNING "OpenCV_VERSION: ${OpenCV_VERSION}")
 

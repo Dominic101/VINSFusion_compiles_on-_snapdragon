@@ -28,6 +28,7 @@ using namespace Eigen;
 class FeaturePerFrame
 {
   public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     FeaturePerFrame(const Eigen::Matrix<double, 7, 1> &_point, double td)
     {
         point.x() = _point(0);
@@ -80,6 +81,7 @@ class FeaturePerId
 class FeatureManager
 {
   public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     FeatureManager(Matrix3d _Rs[]);
 
     void setRic(Matrix3d _ric[]);

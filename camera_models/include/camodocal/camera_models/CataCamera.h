@@ -18,9 +18,11 @@ namespace camodocal
 class CataCamera: public Camera
 {
 public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     class Parameters: public Camera::Parameters
     {
     public:
+	 EIGEN_MAKE_ALIGNED_OPERATOR_NEW
         Parameters();
         Parameters(const std::string& cameraName,
                    int w, int h,

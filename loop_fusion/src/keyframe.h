@@ -34,6 +34,7 @@ using namespace DVision;
 class BriefExtractor
 {
 public:
+  EIGEN_MAKE_ALIGNED_OPERATOR_NEW
   virtual void operator()(const cv::Mat &im, vector<cv::KeyPoint> &keys, vector<BRIEF::bitset> &descriptors) const;
   BriefExtractor(const std::string &pattern_file);
 
@@ -43,6 +44,7 @@ public:
 class KeyFrame
 {
 public:
+	EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 	KeyFrame(double _time_stamp, int _index, Vector3d &_vio_T_w_i, Matrix3d &_vio_R_w_i, cv::Mat &_image,
 			 vector<cv::Point3f> &_point_3d, vector<cv::Point2f> &_point_2d_uv, vector<cv::Point2f> &_point_2d_normal, 
 			 vector<double> &_point_id, int _sequence);
